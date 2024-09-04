@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class PetShop {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double dogPrice = 2.50;
+        double catPrice = 4.00;
+
+        int dogCount = scanner.nextInt();
+        int catCount = scanner.nextInt();
+
+        double totalCost = (dogCount * dogPrice) + (catCount * catPrice);
+
+        System.out.printf("%.2f", totalCost);
+
+        scanner.close();
+    }
+}
